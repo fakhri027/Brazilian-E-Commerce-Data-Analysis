@@ -217,6 +217,7 @@ ax[1].set_title("By Frequency", loc="center", fontsize=50)
 ax[1].tick_params(axis='y', labelsize=30)
 ax[1].tick_params(axis='x', labelsize=35)
 
+colors = ["#90CAF9", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3"]
 sn.barplot(y="monetary", x="customer_id", data=rfm_df.sort_values(by="monetary", ascending=False).head(5), palette=colors, ax=ax[2])
 ax[2].set_ylabel(None)
 ax[2].set_xlabel("customer_id", fontsize=30)
